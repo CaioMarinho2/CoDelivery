@@ -3,7 +3,6 @@ import {listRestaurantCategoryService} from '../../services/restaurantCategory/l
 
 const listRestaurantCategoryController = async (req: Request, res: Response) => {
 	const listRestaurant = await listRestaurantCategoryService();
-
 	return res.status(200).json(listRestaurant);
 };
 
